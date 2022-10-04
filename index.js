@@ -3,7 +3,7 @@
 import Doggy from "./Dog.js";
 import dogs from "./data.js";
 
-let currentDogIndex = 0;
+let currentDogIndex = -1;
 let currentDog = new Doggy(dogs[currentDogIndex]);
 
 currentDog.getDogHtml();

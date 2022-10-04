@@ -54,7 +54,7 @@ main {
 #dog-intro {
   position: absolute;
   left: 28px;
-  top: 700px;
+  bottom: 10px;
 }
 
 footer {
@@ -104,27 +104,27 @@ button {
 }
 
 /* DOG IMAGES */
+
+#dog-card.dog-img {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.dog-img {
+  border-radius: 13px;
+}
 #dog-card {
   height: 751px;
   width: 97%;
-  border-radius: 13px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  width: 100%;
+
   margin-left: 0.5rem;
 }
-#dog-picture {
-  height: 751px;
-  width: 97%;
-  border-radius: 13px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-left: 0.5rem;
-}
+
 /* STAMP */
 
-main img {
+#badge img {
   transform: rotate(-30deg);
   margin-left: 15px;
 }

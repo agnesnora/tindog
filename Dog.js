@@ -6,17 +6,18 @@ class Doggy {
   }
   getDogHtml() {
     const { name, avatar, bio, age, hasBeenSwiped, hasBeenLiked } = this;
-    return `    <div
-    id="dog-picture"
-    style="background-image: url('${avatar}')"
-  > <div id="dog-intro">
-    <h1>${name}, ${age}</h1>
-    <p>${bio}</p>
-  </div>
+    return `  <div class = "feature-suggestion">
+                  <div id="dog-intro">
+                    <h1>${name}, ${age}</h1>
+                    <p>${bio}</p>
+                </div>
+                <img class="dog-img" src = '${avatar}'>
+              </div>  
+    
   
   `;
   }
-  setMatchStatus() {
+  setMatchStatus(bool) {
     hasBeenLiked = true;
     hasBeenSwiped = true;
   }
