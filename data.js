@@ -23,14 +23,6 @@ const dogs = [
     hasBeenSwiped: false,
     hasBeenLiked: false,
   },
-  {
-    name: "Rex",
-    avatar: "images/dog-rex.jpg",
-    age: 25,
-    bio: "Art. Literature. Natural wine. Yoga.",
-    hasBeenSwiped: false,
-    hasBeenLiked: false,
-  },
 ];
 
 export default dogs;

@@ -79,6 +79,13 @@ p {
   color: #b7b7b7;
 }
 
+#end-message {
+  color: #a5a8ad;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
 /* BUTTONS */
 
 button {
