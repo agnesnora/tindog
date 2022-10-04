@@ -18,9 +18,11 @@ function getNewDog() {
       () =>
         (document.getElementById(
           "dog-card"
-        ).innerHTML = `<h2 id="end-message">No more dogs in your area</h2>`),
-      3000
+        ).innerHTML = `<h2 id="end-message">No more dogs in your area</h2>
+        `),
+      2000
     );
+    setTimeout(() => reset(), 4000);
   }
 }
 
@@ -29,4 +31,9 @@ document.getElementById("btn-dislike-id").addEventListener("click", getNewDog);
 
 function render() {
   document.getElementById("dog-card").innerHTML = currentDog.getDogHtml();
+}
+
+function reset() {
+  currentDogIndex = -1;
+  getNewDog();
 }

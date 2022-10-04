@@ -110,6 +110,15 @@ button {
   box-shadow: 0px 10px #ccf1e6;
 }
 
+#reload-btn {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 300px;
+}
+
 /* DOG IMAGES */
 
 #dog-card.dog-img {
