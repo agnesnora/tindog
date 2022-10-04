@@ -16,6 +16,10 @@ class Doggy {
   
   `;
   }
+  setMatchStatus() {
+    hasBeenLiked = true;
+    hasBeenSwiped = true;
+  }
 }
 
 export default Doggy;

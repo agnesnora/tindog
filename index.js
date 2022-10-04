@@ -3,12 +3,15 @@
 import Doggy from "./Dog.js";
 import dogs from "./data.js";
 
-const currentDog = new Doggy(dogs[0]);
+let currentDogIndex = 0;
+let currentDog = new Doggy(dogs[currentDogIndex]);
+
 currentDog.getDogHtml();
 
 function getNewDog() {
-  const nextDogData = dogs.shift();
-  return nextDogData ? new Doggy(nextDogData) : {};
+  currentDogIndex += 1;
+  currentDog = new Doggy(dogs[currentDogIndex]);
+  render();
 }
 
 document.getElementById("btn-like-id").addEventListener("click", getNewDog);
@@ -18,15 +21,11 @@ return nextMonsterData ? new Character(nextMonsterData) : {} */
 
 function interact() {
   if (dogs.length > 0) {
-    dog = getNewDog();
+    currentDog = getNewDog();
     render();
   }
 }
 
 function render() {
-  document.getElementById("dog-card").innerHTML = dog.getDogHtml();
+  document.getElementById("dog-card").innerHTML = currentDog.getDogHtml();
 }
-
-let dog = getNewDog();
-
-document.getElementById("btn-like-id").addEventListener("click", interact);
