@@ -1,0 +1,142 @@
+/* 
+font-family: poppins, sans-serif;
+
+font-weight: 600;
+
+font-style: normal;
+
+
+font-family: poppins, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;This is a single-line comment */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: poppins, sans-serif;
+  width: 550px;
+  background-color: #f6f7fb;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 15px;
+  height: 81px;
+}
+
+.profile-icon,
+.chat-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.logo-icon {
+  width: 84px;
+  height: 40px;
+  object-fit: contain;
+}
+
+main {
+  margin-bottom: 24.5px;
+}
+
+#dog-intro {
+  position: absolute;
+  left: 28px;
+  top: 700px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: #f8f8f8;
+}
+
+p {
+  font-weight: 400;
+  margin-top: 7.23px;
+  font-size: 1.5rem;
+  color: #b7b7b7;
+}
+
+/* BUTTONS */
+
+button {
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px #e9e9ea;
+}
+
+.btn-dislike:hover,
+.btn-dislike:focus {
+  background-color: #ffe7ef;
+  box-shadow: 0px 10px #edd9df;
+}
+
+.btn-like:hover,
+.btn-like:focus {
+  background-color: #dbfff4;
+  box-shadow: 0px 10px #ccf1e6;
+}
+
+/* DOG IMAGES */
+#dog-card {
+  height: 751px;
+  width: 97%;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 0.5rem;
+}
+#dog-picture {
+  height: 751px;
+  width: 97%;
+  border-radius: 13px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 0.5rem;
+}
+/* STAMP */
+
+main img {
+  transform: rotate(-30deg);
+  margin-left: 15px;
+}
+
+#like-badge {
+  display: none;
+  position: absolute;
+  top: -560px;
+}
+
+#nope-badge {
+  display: none;
+  position: absolute;
+  top: -560px;
+}
