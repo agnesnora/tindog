@@ -140,19 +140,12 @@ button {
 
 /* STAMP */
 
-#badge img {
+#like-badge img,
+#nope-badge img {
   transform: rotate(-30deg);
   margin-left: 15px;
-}
-
-#like-badge {
-  display: none;
   position: absolute;
-  top: -560px;
-}
-
-#nope-badge {
-  display: none;
-  position: absolute;
-  top: -560px;
+  top: 50px;
+  width: 35%;
+  z-index: 3;
 }

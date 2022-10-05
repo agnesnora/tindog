@@ -3,9 +3,9 @@
 import Doggy from "./Dog.js";
 import dogs from "./data.js";
 
-let currentDogIndex = -1;
+let currentDogIndex = 0;
 let currentDog = new Doggy(dogs[currentDogIndex]);
-
+render();
 function getNewDog() {
   currentDogIndex += 1;
   currentDog = new Doggy(dogs[currentDogIndex]);
@@ -20,14 +20,23 @@ function getNewDog() {
           "dog-card"
         ).innerHTML = `<h2 id="end-message">No more dogs in your area</h2>
         `),
-      2000
+      1000
     );
-    setTimeout(() => reset(), 4000);
+    setTimeout(() => reset(), 3000);
   }
 }
 
-document.getElementById("btn-like-id").addEventListener("click", getNewDog);
-document.getElementById("btn-dislike-id").addEventListener("click", getNewDog);
+document.getElementById("btn-like-id").addEventListener("click", function () {
+  setTimeout(() => getNewDog(), 1000);
+  document.getElementById("dog-card").innerHTML = currentDog.getLikeOnDogHtml();
+});
+document
+  .getElementById("btn-dislike-id")
+  .addEventListener("click", function () {
+    setTimeout(() => getNewDog(), 1000);
+    document.getElementById("dog-card").innerHTML =
+      currentDog.getCrossOnDogHtml();
+  });
 
 function render() {
   document.getElementById("dog-card").innerHTML = currentDog.getDogHtml();
