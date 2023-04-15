@@ -1,5 +1,6 @@
-# Tindog
+##Tindog - Scrimba Frontend Career Path -  Solo Project
 
-## Solo project of frontend Career Path Module 7 Next-level Javascript
 
-Tinder with dogs.
+Build from scratch with given requirements.
+Following design specs.
+Using JS classes, importing and exporting. 
