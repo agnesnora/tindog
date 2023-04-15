@@ -35,8 +35,8 @@ main {
 
 #dog-intro {
   position: absolute;
-  left: 10px;
-  bottom: 10px;
+  left: 1em;
+  bottom: 1em;
 }
 
 footer {
@@ -50,14 +50,14 @@ footer {
 h1 {
   font-weight: 600;
   margin-bottom: 0;
-  font-size: 4rem;
+  font-size: 2rem;
   color: #f8f8f8;
 }
 
 p {
   font-weight: 400;
   margin-top: 7.23px;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #b7b7b7;
 }
 
@@ -73,7 +73,7 @@ p {
 button {
   border: none;
   border-radius: 50%;
-  padding: 4rem;
+  padding: 2.5rem;
   margin-left: 14px;
   margin-right: 14px;
   background-color: #ffffff;
@@ -124,4 +124,10 @@ button {
   top: 50px;
   width: 35%;
   z-index: 3;
+}
+
+@media (min-width: 550px) {
+  body {
+    max-width: 700px;
+  }
 }
