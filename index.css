@@ -20,14 +20,12 @@ header {
 
 .profile-icon,
 .chat-icon {
-  width: 2.1em;
-  height: 2.1em;
+  width: 7%;
   object-fit: contain;
 }
 
 .logo-icon {
-  width: 84px;
-  height: 40px;
+  width: 15%;
   object-fit: contain;
 }
 
@@ -52,14 +50,14 @@ footer {
 h1 {
   font-weight: 600;
   margin-bottom: 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #f8f8f8;
 }
 
 p {
   font-weight: 400;
   margin-top: 7.23px;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #b7b7b7;
 }
 
@@ -75,7 +73,7 @@ p {
 button {
   border: none;
   border-radius: 50%;
-  padding: 20px;
+  padding: 4rem;
   margin-left: 14px;
   margin-right: 14px;
   background-color: #ffffff;
