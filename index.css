@@ -1,43 +1,28 @@
-/* 
-font-family: poppins, sans-serif;
-
-font-weight: 600;
-
-font-style: normal;
-
-
-font-family: poppins, sans-serif;
-
-font-weight: 400;
-
-font-style: normal;This is a single-line comment */
-
 * {
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 1em;
   font-family: poppins, sans-serif;
-  width: 550px;
+  max-width: 550px;
   background-color: #f6f7fb;
 }
 
 img {
-  display: block;
   max-width: 100%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 23px 15px;
-  height: 81px;
+  padding: 1.4em 1em;
 }
 
 .profile-icon,
 .chat-icon {
-  width: 34px;
-  height: 34px;
+  width: 2.1em;
+  height: 2.1em;
   object-fit: contain;
 }
 
@@ -53,14 +38,14 @@ main {
 
 #dog-intro {
   position: absolute;
-  left: 28px;
+  left: 10px;
   bottom: 10px;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 /* TYPOGRAPHY */
@@ -68,14 +53,14 @@ footer {
 h1 {
   font-weight: 600;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #f8f8f8;
 }
 
 p {
   font-weight: 400;
   margin-top: 7.23px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #b7b7b7;
 }
 
@@ -83,7 +68,7 @@ p {
   color: #a5a8ad;
   text-align: center;
   position: relative;
-  top: 200px;
+  top: 11em;
 }
 
 /* BUTTONS */
@@ -121,21 +106,15 @@ button {
 
 /* DOG IMAGES */
 
-#dog-card.dog-img {
-  width: 100%;
-  border-radius: 13px;
-}
-
+#dog-card,
 .dog-img {
   border-radius: 13px;
 }
+
 #dog-card {
-  height: 751px;
-  width: 97%;
+  width: 100%;
   position: relative;
   width: 100%;
-
-  margin-left: 0.5rem;
 }
 
 /* STAMP */
