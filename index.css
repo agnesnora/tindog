@@ -5,7 +5,6 @@ body {
   margin: 0 auto;
   padding: 1em;
   font-family: poppins, sans-serif;
-  max-width: 550px;
   background-color: #f6f7fb;
 }
 
@@ -53,14 +52,14 @@ footer {
 h1 {
   font-weight: 600;
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #f8f8f8;
 }
 
 p {
   font-weight: 400;
   margin-top: 7.23px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #b7b7b7;
 }
 
