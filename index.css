@@ -112,7 +112,7 @@ button {
 #dog-card {
   width: 100%;
   position: relative;
-  width: 100%;
+ 
 }
 
 /* STAMP */
@@ -127,8 +127,5 @@ button {
   z-index: 3;
 }
 
-@media (min-width: 550px) {
-  body {
-    max-width: 700px;
-  }
+
 }
